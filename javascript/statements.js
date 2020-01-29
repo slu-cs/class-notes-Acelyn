@@ -14,7 +14,7 @@ for (let x = 0; x < 3; x++){
 // while loop
 let x = 0;
 while (x < 3){
-  console.log(X);
+  console.log(x);
   x += 1;
 }
 
