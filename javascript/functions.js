@@ -6,7 +6,7 @@ const avg = function(a,b){
 };
 
 // Function call
-console.log(avg5,6));
+console.log(avg(5,6));
 
 // Another definition
 const print = function(a,b){
