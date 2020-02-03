@@ -17,7 +17,7 @@ const circle = {
 }
 
 // Access subproperties
-console.log(circle.center,x);
+console.log(circle.center.x);
 
 // Undefined subproperties
 console.log(circle.color);
