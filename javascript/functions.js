@@ -48,5 +48,5 @@ const large = new Rectangle(10,20);
 
 
 // Method calls
-console.log(samll.area());
+console.log(small.area());
 console.log(large.area());
