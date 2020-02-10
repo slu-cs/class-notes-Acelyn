@@ -11,7 +11,7 @@ const Professor = new mongoose.Schema({
 });
 
 // Speed up queries on all fields
-Professor.index({name: 1});
+Professor.index({name: 1}); 
 Professor.index({rank: 1});
 Professor.index({started: 1});
 Professor.index({courses: 1});
