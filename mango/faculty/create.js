@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const connect = require('./db');
 const Professor = require('./schema');
 
-connect(); // T o the database
+connect(); // To the database
 
 //Create some faculty
 const harcourt = new Professor({
@@ -40,11 +40,13 @@ mongoose.connection.dropDatabase(function(){
         if(error) console.error(error.stack);
 
   });
-
+  });
+});
+});
 
 
   // Disconnect
   mongoose.connection.close(function(){
     console.log('Database is ready');
-  });
+
 });
