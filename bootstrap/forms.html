@@ -1,0 +1,63 @@
+<!-- Form styling-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <metal charset ="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="m-3 border p-3">
+      <div class="form-group">
+        <label for ="text"> Text: </label>
+        <input type="text" id="text" name="text" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="textarea">Textarea:</label>
+        <textarea id="textare" name="textarea" class="form-control"></textarea>
+      </div>
+
+      <fieldset class="form-group">
+        <legend class="form-control-plaintext">Checkboxes:</legend>
+        <div class="form-check">
+          <input type="checkbox" id="check1" name="check1"  value="C" class="form-check-input">
+          <label for="check1" class="form-check-label">C</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="check2" name="check1"  value="D" class="form-check-input">
+          <label for="check1" class="form-check-label">D</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend class="form-control-plaintext">Radio buttons:</legend>
+        <div class="form-check">
+          <input type="radio" id="radio1" name="radio" value="A" class="form-check-input">
+          <label for="radio1" class="form-check-label">A</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" id="radio2" name="radio" value="B" class="form-check-input">
+          <label for="radio2" class="form-check-label">B</label>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="select">Select:</label>
+        <select id="select" name="select" class="form-control">
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class= "btn btn-primary">Submit</button>
+        <button class="btn btn-secondary">Cancel</button>
+      </div>
+
+
+
+    </form>
+
+  </body>
+</html>
