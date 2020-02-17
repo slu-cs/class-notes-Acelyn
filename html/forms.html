@@ -1,0 +1,45 @@
+<!-- Overall structure for any web page-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <metal charset ="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <label for ="text"> Text: </label>
+      <input type="text" id="text" name="text">
+
+      <label for="textarea">Textarea:</label>
+      <textarea id="textare" name="textarea"></textarea>
+
+      <fieldset>
+        <legend>Checkboxes:</legend>
+        <input type="checkbox" id="check1" name="check1"  value="C">
+        <label for="check1">C</label>
+        <input type="checkbox" id="check2" name="check1"  value="D">
+        <label for="check1">D</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio buttons:</legend>
+        <input type="radio" id="radio1" name="radio" value="A">
+        <label for="radio1">A</label>
+        <input type="radio" id="radio2" name="radio" value="B">
+        <label for="radio2">B</label>
+      </fieldset>
+
+      <label for="select">Select:</label>
+      <select id="select" name="select">
+        <option value="E">E</option>
+        <option value="F">F</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <button>Cancel</button>
+
+
+    </form>
+
+  </body>
+</html>
