@@ -1,0 +1,43 @@
+<!-- Examples of selecting DOM elements-->
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Objects</title>
+  </head>
+  <body>
+      <form class="" action="index.html" method="post">
+        <input type="text" name="left" value="">
+        <input type="text" name="right" value="">
+        <button type="sumbit">Sumbit</button>
+      </form>
+      <div class="first">
+        <img id = "A" src="http://via.placeholder.com/100x100">
+        <img id = "B" src="http://via.placeholder.com/100x100">
+      </div>
+      <div class="second">
+        <button id="C">CLick me</button>
+        <button id="D">CLick me</button>
+      </div>
+      <ul id="clicks">
+
+      </ul>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script>
+        $('form').on('submit', function(event){
+          const form =$(this);
+          event.preventDefault();
+          $(this).find('input').remove();
+        });
+
+        $(document).on('click', 'img', function(event){
+          $(this).closest('div').remove();
+        });
+
+        $('.second').on('click', 'button', function(event){
+          const id = $(this).attr('id');
+          const li = $(`<li>Clicked button ${id}</li>`);
+          $('#clicks').append(li);
+        });
+
+      </script>
+  </body>
