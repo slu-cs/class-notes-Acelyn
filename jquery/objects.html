@@ -1,0 +1,30 @@
+<!-- Examples of selecting DOM elements-->
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Objects</title>
+  </head>
+  <body>
+      <form class="" action="index.html" method="post">
+        <input type="text" name="left" value="">
+        <input type="text" name="right" value="">
+        <button type="sumbit">Sumbit</button>
+      </form>
+      <div class="first">
+        <img id = "A" src="http://via.placeholder.com/100x100">
+        <img id = "B" src="http://via.placeholder.com/100x100">
+      </div>
+      <div class="second">
+        <button id="C">CLick me</button>
+        <button id="D">CLick me</button>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script>
+        console.log($(document));
+        console.log($('form'));
+        console.log($('button'));
+        console.log($('#A'));
+        console.log($('.second'));
+
+      </script>
+  </body>
