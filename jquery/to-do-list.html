@@ -1,0 +1,65 @@
+<!-- Examples of selecting DOM elements-->
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Objects</title>
+  </head>
+  <body>
+    <form>
+      <label for="left">thing to do</label>
+      <input type="text" name ="left">
+      <button type="submit">Add</button>
+
+
+    </form>
+    <div id = "history">
+      <p>Things to do</p>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+
+    // Respond to submit vevent
+    $('form').on('submit', function(event){
+      const form = $(this);
+      event.preventDefault();
+
+      // create a new list
+      const list = $('<ul></ul>');
+
+
+      //console.log(form.serialize());
+      const inputs = form.find('input');
+      //console.log(input);
+      for (let input of inputs){
+        input = $(input); // Turn into JQuery
+      //  const liButton = $(`<button type="submit">Delete</button>`)
+        const li = $(`<li>${input.val()} <button class="delete">Delete</button></li>`); // get the value
+      //  list.append(liButton);
+
+        list.append(li);
+
+
+        input.val(''); // set the value
+      }
+
+
+
+
+    //  $('#history').append($(`<p>Submit #${counter} </p>)`));
+      $('#history').append(list);
+    });
+
+    $(document).on('click', '.delete', function(event){
+      const deleted = $(this);
+      event.preventDefault();
+      deleted.remove;
+
+    });
+
+
+
+  </script>
+
+  </body>
+</html>
