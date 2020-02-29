@@ -63,7 +63,7 @@ user.question(q1, function(name){
   const a1 = readline.createInterface({
     input: process.stdin
   });
-  console.log(q1+a1)
+  console.log(a1);
 });
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
