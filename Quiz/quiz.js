@@ -45,7 +45,7 @@ const even = function(numbers){
 
 console.log(even(numbers));
 //////////////////////////////////////////////////////////////// Question 3
-/*
+
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
 const readline = require('readline');
@@ -65,11 +65,11 @@ const question = function(prompt) {
 
 // B. Make small talk again, using promises.
 
-*/
+
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
-
+/*
 // This function returns a promise, which produces 42 after an asynchronous delay of one second.
 const f1 = function() {
   return new Promise(resolve => setTimeout(() => resolve(42), 1000));
@@ -89,3 +89,4 @@ then(function(result){
   if (result[0]<result[1]) console.log('f2');
   if (result[0]===result[1]) console.log('euqal');
 });
+*/
