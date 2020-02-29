@@ -61,7 +61,7 @@ const q2 = 'How are you doing?';
 user.question(q1, function(name){
   console.log(q1);
   const a1 = readline.createInterface({
-    input: process.stdin(name);
+    input: process.stdin(name)
   });
   console.log(q1+a1)
 });
