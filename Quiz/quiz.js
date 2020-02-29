@@ -62,6 +62,7 @@ user.question(q1, function(name){
   console.log(q1);
   const a1 = readline.createInterface({
     input: name
+  });
   console.log(q1+a1)
 });
 
