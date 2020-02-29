@@ -58,18 +58,7 @@ const user = readline.createInterface({
 const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
 
-user.question(q1, prompt(q1)) {
-  console.log(q1);
-
-};
-const q1 = 'What is your name?';
-const q2 = 'How are you doing?';
-user.on(function(){
-  question(q1, function(q1){
-    console.log(q2,line);
-
-  })
-});
+user.question(q1, prompt(q1));
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
 // Call this question function in part B instead of calling the user.question method.
