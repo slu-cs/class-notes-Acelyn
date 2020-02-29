@@ -59,9 +59,9 @@ const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
 
 user.question(q1, function(line){
-    console.log('Hello '+ line);
+    console.log('Hello '+ line+'.');
     user.question(q2, function(line){
-        console.log('I am also '+ line);
+        console.log('I am also '+ line+'.');
       });
     });
 
