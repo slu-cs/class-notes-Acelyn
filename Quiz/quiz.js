@@ -60,10 +60,10 @@ const q2 = 'How are you doing?';
 
 user.question(q1, function(name){
   console.log(q1);
-  const a1 = readline.createInterface({
-    input: process.stdin
-  });
-  console.log(a1);
+  user.on('line', function(line){
+    console.log('Hello '+ line);
+});
+
 });
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
