@@ -58,8 +58,8 @@ const user = readline.createInterface({
 const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
 
-user.question(function(name){
-  console.log(q1);
+user.question(q1, function(){
+
   user.on('line', function(line){
     console.log('Hello '+ line);
 });
