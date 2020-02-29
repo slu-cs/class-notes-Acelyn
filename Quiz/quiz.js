@@ -58,7 +58,7 @@ const user = readline.createInterface({
 const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
 
-user.question(q1, prompt(q1) {
+user.question(q1, prompt(q1)) {
   console.log(q1);
 
   // File configuration
