@@ -59,11 +59,14 @@ const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
 
 user.question(q1, function(){
-
   user.on('line', function(line){
     console.log('Hello '+ line);
-});
-
+    user.question(q2, function(){
+      user.on('line', function(line){
+        console.log('I am also '+ line);
+      });
+    });
+  });
 });
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
