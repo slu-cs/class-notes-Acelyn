@@ -74,9 +74,9 @@ const question = function(prompt) {
 
 // B. Make small talk again, using promises.
 question(q1).then(function(r1){
-  console.log(q1 + ' '+ r1 + '.');
+  console.log('Hello' + ' '+ r1 + '.');
   return question(q2)}).
-  then(r2=>console.log(q2 + ' ' + r2 + '.'));
+  then(r2=>console.log(I am also + ' ' + r2 + '.'));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
