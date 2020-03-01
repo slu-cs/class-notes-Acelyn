@@ -43,15 +43,21 @@ const even = function(numbers){
   }
 };
 */
-const even = function(numbers, function(numbers){
-  for (const number of numbers){
+const even = function(number){
     if (number%2===0){
       return number;
-    }
   }
-});
+};
 
-console.log(even(numbers,funcion(numbers));
+function myFind(array, condition){
+  const result = []
+  for (const arr of array {
+    result.push(condition(arr));
+  }
+  return result;
+};
+
+console.log(myFind(numbers,even);
 //////////////////////////////////////////////////////////////// Question 3
 
 // This creates the user object described on the quiz.
