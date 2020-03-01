@@ -73,7 +73,7 @@ const question = function(prompt) {
 };
 
 // B. Make small talk again, using promises.
-question.
+Promise.
   then(result=>console.log(result)).
   catch(error=>console.log(error.stack));
 
