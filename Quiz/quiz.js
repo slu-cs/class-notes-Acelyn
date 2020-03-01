@@ -57,7 +57,7 @@ const user = readline.createInterface({
 // A. Make small talk, using traditional callbacks.
 const q1 = 'What is your name?';
 const q2 = 'How are you doing?';
-/*
+
 user.question(q1, function(line){
     console.log('Hello '+ line+'.');
     user.question(q2, function(line){
@@ -65,20 +65,19 @@ user.question(q1, function(line){
       });
     });
 
-*/
+
 // The user.question method doesn't actually return a promise, so here is a question function that does.
 // Call this question function in part B instead of calling the user.question method.
 const question = function(prompt) {
   return new Promise(resolve => user.question(prompt, resolve));
 };
-
+/*
 // B. Make small talk again, using promises.
 question(q1).then(function(r1){
   console.log('Hello '+ r1 + '.');
   return question(q2)}).
-  then(r2=>console.log('I am also ' + r2 + '.')).
-  catch(error=>console.log(error));
-
+  then(r2=>console.log('I am also ' + r2 + '.'));
+*/
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
