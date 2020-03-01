@@ -57,7 +57,7 @@ function myFind(array, condition){
   return result;
 };
 
-console.log(myFind(numbers,even);
+console.log(myFind(numbers,even));
 //////////////////////////////////////////////////////////////// Question 3
 
 // This creates the user object described on the quiz.
