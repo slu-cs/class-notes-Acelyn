@@ -76,7 +76,7 @@ const question = function(prompt) {
 question(q1).then(function(r1){
   console.log(q1 + ' '+ r1 + '.');
   return question(q2)}).
-  then(r2=>console.log(q2 + ' ' + r2 + '.');
+  then(r2=>console.log(q2 + ' ' + r2 + '.'));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
