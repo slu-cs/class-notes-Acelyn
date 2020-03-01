@@ -73,7 +73,11 @@ const question = function(prompt) {
 };
 
 // B. Make small talk again, using promises.
-question(q1).then(result=>console.log(result)).catch(error=>console.log(error.stack));
+question(q1).then(function(r1){
+  console.log(q1 + ' '+ r1 + '.'));
+  return question(q2)}).
+  then(r2=>console.log(q2 + ' ' + r2 + '.').
+  catch(error=>console.log(error.stack));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
