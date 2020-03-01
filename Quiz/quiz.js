@@ -1,4 +1,4 @@
-// Name:
+// Name:Ruoya Ding
 
 //////////////////////////////////////////////////////////////// Question 1
 
@@ -10,7 +10,7 @@ const labs = [
 
 // A. Generate a new array containing the seat numbers of all the labs (by invoking the built-in map method).
 const seatNumber = labs.map(lab=>lab.seats);
-console.log(seatNumber);
+
 
 // B. Generate a new array containing only the labs with more than 10 seats (by invoking the built-in filter method).
 const ten = labs.filter(lab=>lab.seats>10);
@@ -19,7 +19,7 @@ console.log(ten);
 labs.sort(function(a,b){
   return a.seats - b.seats
   });
-console.log(labs);
+
 
 //////////////////////////////////////////////////////////////// Question 2
 
@@ -31,18 +31,10 @@ const firstEven = numbers.find(function(a){
     return a;
   }
 });
-console.log(firstEven);
+
 
 // B. Define a standalone find function. The array is its first argument and the callback is its second argument.
-/*
-const even = function(numbers){
-  for (const number of numbers){
-    if (number%2===0){
-      return number;
-    }
-  }
-};
-*/
+
 const even = function(number){
     if (number%2===0){
       return number;
@@ -57,8 +49,6 @@ function myFind(array, condition){
   }
 };
 
-
-console.log(myFind(numbers,even));
 //////////////////////////////////////////////////////////////// Question 3
 
 // This creates the user object described on the quiz.
