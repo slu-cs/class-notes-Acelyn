@@ -51,7 +51,7 @@ const even = function(number){
 
 function myFind(array, condition){
   for (const arr of array) {
-    if (rcondition(arr)!==0){
+    if (condition(arr)!==0){
       return arr;
     }
   }
