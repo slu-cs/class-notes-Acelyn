@@ -34,7 +34,7 @@ const firstEven = numbers.find(function(a){
 console.log(firstEven);
 
 // B. Define a standalone find function. The array is its first argument and the callback is its second argument.
-
+/*
 const even = function(numbers){
   for (const number of numbers){
     if (number%2===0){
@@ -42,6 +42,14 @@ const even = function(numbers){
     }
   }
 };
+*/
+const even = function(numbers, function(numbers){
+  for (const number of numbers){
+    if (number%2===0){
+      return number;
+    }
+  }
+});
 
 console.log(even(numbers));
 //////////////////////////////////////////////////////////////// Question 3
@@ -71,13 +79,13 @@ user.question(q1, function(line){
 const question = function(prompt) {
   return new Promise(resolve => user.question(prompt, resolve));
 };
-/*
+
 // B. Make small talk again, using promises.
 question(q1).then(function(r1){
   console.log('Hello '+ r1 + '.');
   return question(q2)}).
   then(r2=>console.log('I am also ' + r2 + '.'));
-*/
+
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
