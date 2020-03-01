@@ -50,12 +50,13 @@ const even = function(number){
 };
 
 function myFind(array, condition){
-  const result = []
   for (const arr of array) {
-    result.push(condition(arr));
-  }
-  return result;
-};
+    if (rcondition(arr)!==0){
+      return arr
+
+    }
+  };
+
 
 console.log(myFind(numbers,even));
 //////////////////////////////////////////////////////////////// Question 3
