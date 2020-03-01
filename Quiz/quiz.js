@@ -76,7 +76,8 @@ const question = function(prompt) {
 question(q1).then(function(r1){
   console.log('Hello '+ r1 + '.');
   return question(q2)}).
-  then(r2=>console.log('I am also ' + r2 + '.'));
+  then(r2=>console.log('I am also ' + r2 + '.')).
+  catch(error=>console.log(error));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
