@@ -74,7 +74,9 @@ const question = function(prompt) {
 
 // B. Make small talk again, using promises.
 Promise.all(question).
-  then(()=>console.log(q1+line));
+  then(()=>console.log(q1+line)).
+  then(()=>console.log(q2+line)).
+  catch(error=>console.log(error.stack));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
