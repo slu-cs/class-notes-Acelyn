@@ -1,8 +1,14 @@
-// hello world web server
+// Bakery world web server
 const express = require('express');
 
 // Create the server
 const app = express();
+
+// Ignore icon requests
+app.get('/favicon.ico', function(request, response){
+  response.status(204).end();
+})
+
 
 // Log requests to the console
 app.use(function(request,response,next){
@@ -17,11 +23,17 @@ app.get('/', function(request,response){
   response.send(`
     <h1>Bakery</hi>
     <ul>
-      <li><a herf="/cakes">Cakes</a></li>
-      <li><a herf="/pies">Pies</a></li>
+      <li><a href="/cakes">Cakes</a></li>
+      <li><a href="/pies">Pies</a></li>
     </ul
     `);
 });
+
+//Routing
+app.use('/cakes',require('./cakes.js'))
+app.use('/pies',require('./pies.js'))
+
+//app.get('/cakes')
 
 // Handle undefined routes
 app.use(function(request,response,next){
