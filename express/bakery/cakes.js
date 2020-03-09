@@ -29,7 +29,7 @@ router.get('/:id', function(request, response, next) {
   if (!cake){
     next(); // Pass in this request
   }else{
-    response.render('cakes/detail', {cake:cake});
+    response.render('cakes/index', {cakes:cakes});
   }
 });
 

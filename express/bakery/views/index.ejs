@@ -3,8 +3,10 @@
   <body>
     <h1>Bakery</h1>
     <ul>
-      <li><a href="/cakes">Cakes</a></li>
-      <li><a href="/pies">Pies</a></li>
+      <%_ for (const cake of cakes){ -%>
+        <li><a href="/cakes<^= cake.id -%>">
+          <%= cake.flavor -%></a></li>
+      <%_} -%>
     </ul>
   </body>
 </html>
