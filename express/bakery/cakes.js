@@ -31,5 +31,6 @@ router.get('/:id', function(request, response, next) {
   }else{
     response.render('cakes/detail', {cake:cake});
   }
+});
 
 module.exports = router;
