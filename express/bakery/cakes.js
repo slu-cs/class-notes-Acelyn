@@ -28,7 +28,7 @@ router.get('/:id', function(request, response, next) {
 
   if (!cake){
     next(); // Pass in this request
-  else{
+  }else{
     response.render('cakes/detail', {cake:cake});
   }
 
