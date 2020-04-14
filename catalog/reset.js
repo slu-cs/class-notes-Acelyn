@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const connect = require('./db');
-const Course = require('./models/courses');
-const Section = require('./models/sections');
+const Course = require('./models/course');
+const Section = require('./models/section');
 
 // Connect to the database
 connect();
