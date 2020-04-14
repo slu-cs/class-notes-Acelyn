@@ -1,4 +1,4 @@
-const Section = require('../models/section');
+const Section = require('../models/sections');
 
 // GET /sections?sort=
 module.exports.index = function(request, response, next) {
