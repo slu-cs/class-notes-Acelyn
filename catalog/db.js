@@ -1,3 +1,4 @@
+// Function for database connection.
 const mongoose = require('mongoose');
 
 module.exports = function() {

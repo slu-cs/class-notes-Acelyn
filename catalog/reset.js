@@ -1,3 +1,4 @@
+// Script for setting up a database.
 const mongoose = require('mongoose');
 const connect = require('./db');
 const Course = require('./models/course');
